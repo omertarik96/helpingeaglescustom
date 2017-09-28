@@ -1,0 +1,146 @@
+
+
+/* Put your custom styles here */
+
+.box-h3
+{
+    font-size: 20px;
+    padding: 0 0 20px;
+    margin: 0 0 20px 0;
+    display: block;
+    border-bottom: 1px solid #e8e8e8;
+}
+
+.icon
+{
+    margin-right: 5px;
+}
+
+.icon
+{
+}
+
+.listing-details-sidebar
+{
+    padding: 0;
+    list-style: none;
+    font-size: 15px;
+    margin-bottom: -5px;
+    position: relative;
+    display: block;
+}
+
+.button-main
+{
+    color: #f91942;
+    font-weight: 600;
+    font-size: 14px;
+    background-color: #000;
+    border: 1px solid #e0e0e0;
+    border-radius: 50px;
+    padding: 10px 25px;
+    line-height: 24px;
+    margin-bottom: 9px;
+    transition: 0.3s;
+    cursor: pointer;
+    text-align: center;
+    width: 100%;
+}
+.button-main:hover {
+    background-color: #f91942;
+}
+
+.icon-red
+{
+    color: #f91942;
+}
+
+.content-image
+{
+    display: block;
+    margin-top: 10%;
+}
+
+.navbar-header
+{
+    display: block;
+}
+
+.header-background
+{
+    background-color: #f91942;
+}
+
+.header-background
+{
+    background: #f91942;
+}
+
+.button-red
+{
+    background-color: #f91942;
+}
+
+.media .media-object { max-width: 120px; }
+.media-body { position: relative; }
+.media-date {
+    position: absolute;
+    right: 25px;
+    top: 25px;
+}
+.media-date li { padding: 0; }
+.media-date li:first-child:before { content: ''; }
+.media-date li:before {
+    content: '.';
+    margin-left: -2px;
+    margin-right: 2px;
+}
+.media-comment { margin-bottom: 20px; }
+.media-replied { margin: 0 0 20px 50px; }
+.media-replied .media-heading { padding-left: 6px; }
+
+.btn-circle {
+    font-weight: bold;
+    font-size: 12px;
+    padding: 6px 15px;
+    border-radius: 20px;
+}
+.btn-circle span { padding-right: 6px; }
+
+
+.listing-tag {
+    margin: 0;
+    padding: 8px 16px;
+    line-height: 20px;
+    letter-spacing: 2.5px;
+    border-radius: 50px;
+    text-transform: uppercase;
+    background-color: #fff;
+    border: 1px solid #f91942;
+    color: #f91942;
+    font-size: 10px;
+    font-weight: 500;
+    position: relative;
+    top: -6px;
+    margin-left: 0px;
+}
+
+.masonry-layout {
+    column-count: 3;
+    column-gap: 0;
+}
+.masonry-layout__panel {
+    break-inside: avoid;
+    padding: 5px;
+}
+.masonry-layout__panel-content {
+    padding: 10px;
+    border-radius: 10px;
+}
+
+@media only screen and (max-device-width: 736px) {
+    .masonry-layout {
+        column-count: 1;
+        column-gap: 0;
+    }
+}
