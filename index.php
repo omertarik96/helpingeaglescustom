@@ -21,7 +21,7 @@
                                 <h3><?php the_title(); ?></h3>
                                 <p><?php the_category(','); ?></p>
                                 <p><?php the_excerpt(); ?>.</p>
-                                <a href="<?php the_permalink(); ?>"> <button type="button" class="btn btn-default button-main button-red">Read More</button> </a>
+                                <a href="<?php the_permalink(); ?>"> <button type="button" class="btn btn-default button-main button-red">Help</button> </a>
                             </div>
                         </div>
                     </div>
