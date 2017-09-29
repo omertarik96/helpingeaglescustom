@@ -71,6 +71,7 @@
         <section id="promo-3" class="content-block promo-3 bg-deepocean min-height-400px" style="background-image:url('<?php echo get_template_directory_uri(); ?>/assests/images/main-image.jpg')">
             <div class="container text-center">
                 <div class="row">
+			<a href="<?php echo get_settings('home'); ?>/">
 			<?php
                     	$custom_logo_id = get_theme_mod( 'custom_logo' );
 			$logo = wp_get_attachment_image_src( $custom_logo_id , 'full' );
@@ -79,6 +80,7 @@
 			} else {
 			        echo '<h1>'. get_bloginfo( 'name' ) .'</h1>';
 			} ?>
+			</a>
                     <h2><?php bloginfo('description'); ?></h2>
                     <div class="col-md-6">
                         <a href="<?php get_site_url(); ?> /helpingeagles/need-request/" class="btn btn-outline btn-outline-xl outline-light"><span class="fa fa-heart pomegranate"></span> Make a Request</a>
