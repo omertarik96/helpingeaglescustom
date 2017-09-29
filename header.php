@@ -7,9 +7,7 @@
         	<?php
 
 	    	global $page, $paged;
-
 	    	wp_title( '|', true, 'right' );
-
 	    	bloginfo( 'name' );
 
 	    	$site_description = get_bloginfo( 'description', 'display' );
@@ -18,7 +16,6 @@
 
 	    	if ( $paged >= 2 || $page >= 2 )
 		    	echo ' | ' . sprintf( __( 'Page %s', 'twentyeleven' ), max( $paged, $page ) );
-
 	    	?>
 		</title>
 
@@ -74,7 +71,13 @@
         <section id="promo-3" class="content-block promo-3 bg-deepocean min-height-400px" style="background-image:url('<?php echo get_template_directory_uri(); ?>/assests/images/main-image.jpg')">
             <div class="container text-center">
                 <div class="row">
-                    <h1><a href="<?php echo get_settings('home'); ?>/"><?php bloginfo('name'); ?></a></h1>
+                    	$custom_logo_id = get_theme_mod( 'custom_logo' );
+			$logo = wp_get_attachment_image_src( $custom_logo_id , 'full' );
+			if ( has_custom_logo() ) {
+			        echo '<img src="'. esc_url( $logo[0] ) .'">';
+			} else {
+			        echo '<h1>'. get_bloginfo( 'name' ) .'</h1>';
+			}
                     <h2><?php bloginfo('description'); ?></h2>
                     <div class="col-md-6">
                         <a href="<?php get_site_url(); ?> /helpingeagles/need-request/" class="btn btn-outline btn-outline-xl outline-light"><span class="fa fa-heart pomegranate"></span> Make a Request</a>
