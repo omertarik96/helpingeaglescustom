@@ -2,7 +2,10 @@
 
         <div class="post-section">
 
-			<div class="container"><h2>Latest Requests</h2></div>
+			<div class="container">
+                <h2>Latest Requests</h2>
+				<?php echo do_shortcode( '[searchandfilter taxonomies="search,category,post_tag,post_format,role,urgency,hcc"]' ); ?>
+            </div>
 
             <div class="masonry-layout container">
 
@@ -30,12 +33,6 @@
                     }
                 }
                 ?>
-            </div>
-
-            <div class="container">
-	            <?php echo do_shortcode("[ajax_filter_search filter_by=\"category-slug-1,category-slug2\"]"); ?>
-				<?php echo do_shortcode( '[searchandfilter taxonomies="search,category,post_tag,post_format,role,urgency,hcc"]' ); ?>
-
             </div>
 
         </div>
