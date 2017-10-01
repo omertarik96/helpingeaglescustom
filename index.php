@@ -3,8 +3,8 @@
         <div class="post-section">
 
 			<div class="container">
-                <h2>Latest Requests</h2>
-				<?php echo do_shortcode( '[searchandfilter taxonomies="search,category,post_tag,post_format,role,urgency,hcc"]' ); ?>
+                <h2 style="display: inline-block">Latest Requests</h2>
+                <span style="display: inline-block"><?php echo do_shortcode( '[searchandfilter taxonomies="search,category,post_tag,post_format,role,urgency,hcc"]' ); ?> </span>
             </div>
 
             <div class="masonry-layout container">
