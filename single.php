@@ -1,5 +1,3 @@
-<?php auth_redirect(); ?>
-
 <?php get_header(); ?>
 
 
