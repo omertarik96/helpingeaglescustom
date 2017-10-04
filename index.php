@@ -21,7 +21,7 @@
                                     <?php the_post_thumbnail( 'full', array( 'class'   => 'img-responsive')); ?>
                                 </div>
 
-                                <h3 class="card-heading"><?php the_title(); ?></h3>
+                                <h3 class="card-heading"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
                                 <p class="card-categories"><?php the_category(','); ?></p>
                                 <p class="card-excerpt"><?php the_excerpt(); ?>.</p>
                                 <a href="<?php the_permalink(); ?>"> <button type="button" class="btn btn-default button-main button-red">Provide Help</button> </a>
