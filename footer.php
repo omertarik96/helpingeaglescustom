@@ -34,7 +34,7 @@
 --!>
 
 <div class="col-xs-12 footer-text">
-                    <p>Build with &#9829; and &#9749; by a team of <a href="https://www.facebook.com/groups/hccinnovationclub/">HCC Innovation Club</a>. Led by <a href="http://linkedin.com/in/otarikkoc">Omer Tarik Koc</a></p>
+                    <p>Built with &#9829; and &#9749; by the HCC Innovation Club. Learn more about <a href="/about">our amazing team</a>.
                 </div>
             </div>
         </footer>
