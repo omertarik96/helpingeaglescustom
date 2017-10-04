@@ -85,7 +85,7 @@
                         <a href="<?php get_site_url(); ?> /helpingeagles/need-request/" class="btn btn-outline btn-outline-xl outline-light"><span class="fa fa-heart pomegranate"></span>&nbsp;Make a request</a>
                     </div>
                     <div class="col-md-6">
-                        <a href="<?php get_site_url(); ?> /helpingeagles/myrequests/" class="btn btn-outline btn-outline-xl outline-light"><span class="fa fa-check crete"></span>&nbsp;Check requests</a>
+                        <a href="<?php get_site_url(); ?> /helpingeagles/myrequests/" class="btn btn-outline btn-outline-xl outline-light"><span class="fa fa-check aqua"></span>&nbsp;Check requests</a>
                     </div>
                 </div>
             </div>
