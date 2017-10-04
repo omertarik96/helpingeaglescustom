@@ -3,7 +3,7 @@
         <div class="post-section">
 
 			<div class="container">
-                <h2 class=latest-requests-heading">Latest Requests</h2>
+                <h2 class="latest-requests-heading">Latest Requests</h2>
                 <span style="display: inline-block"><?php echo do_shortcode( '[searchandfilter taxonomies="search,category,role,urgency"]' ); ?> </span>
             </div>
 
