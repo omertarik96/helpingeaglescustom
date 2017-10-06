@@ -61,7 +61,7 @@
 				</div>
 				<div class="col-sm-12 col-md-4">
 					<div class="details" id="response">
-						<h3 class="box-h3" ><i class="fa fa-lg fa-reply icon "></i>Volunteer Response:</h3>
+						<h3 class="box-h3" ><i class="fa fa-lg fa-reply icon "></i>Respond:</h3>
 						<div class="listing-details-sidebar listing-sidebar-list">
 
 							<?php comment_form(array(
