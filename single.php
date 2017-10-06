@@ -37,12 +37,12 @@
 
 
                         <div class="row">
-                            <div class="col-md-8">
+                            <div class="col-sm-12 col-md-7 ">
                                 <!--TITLE AND CONTENT-->
                                 <h3><?php the_title(); ?></h3>
                                 <p><?php the_content(); ?>.</p>
                             </div>
-                            <div style="padding-top: 3%" class="col-md-4">
+                            <div style="padding-top: 3%" class="col-sm-12 col-md-5">
 
                                 <!--CONTACT DETAILS SECTION-->
                                 <h3 class="box-h3"><i class="fa fa-lg fa-thumb-tack icon"></i>Contact Details:</h3>
