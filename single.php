@@ -94,13 +94,12 @@
                                 </ul>
                                 
                                 <!--LOCATION SECTION-->
-                                <h3 class="box-h3"><i class="fa fa-lg fa-compass icon"></i>Location:</h3>
+                                <h3 class="box-h3"><i class="fa fa-lg fa-compass icon"></i>Address:</h3>
                                 <ul class="listing-details-sidebar listing-sidebar-list">
-                                    <p>
-								        <?php echo get_post_meta( $post->ID, "location_street", true ); ?>
-                                        , <?php echo get_post_meta( $post->ID, "location_street_2", true ); ?>
-                                        , <?php echo get_post_meta( $post->ID, "location_city", true ); ?> <?php echo get_post_meta( $post->ID, "location_state", true ); ?>
-                                        , <?php echo get_post_meta( $post->ID, "location_zip_code", true ); ?></p>
+								        <li><?php echo get_post_meta( $post->ID, "location_street", true ); ?></li>
+                                        <li><?php echo get_post_meta( $post->ID, "location_street_2", true ); ?></li>
+                                        <li><?php echo get_post_meta( $post->ID, "location_city", true ); ?>, <?php echo get_post_meta( $post->ID, "location_state", true ); ?></li>
+                                        <li><?php echo get_post_meta( $post->ID, "location_zip_code", true ); ?></li>
                                 </ul>
                         </div>
                 </div>
