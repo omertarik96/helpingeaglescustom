@@ -34,7 +34,7 @@
                         
                     </div>
 
-                    <div class="details">
+                    <div class="details"  id="response">
                     
                         <!--RESPOND SECTION-->
                         <h3 class="box-h3"><i class="fa fa-lg fa-reply icon "></i>Respond:</h3>
@@ -62,32 +62,35 @@
 
                 
                 <div class="col-sm-12 col-md-4">
-                
-                    <!--CONTACT DETAILS SECTION-->
-                                <div class="details" id="response">
-                                <h3 class="box-h3"><i class="fa fa-lg fa-thumb-tack icon"></i>Contact Details:</h3>
-                                <ul class="listing-details-sidebar listing-sidebar-list">
-                                    <li>
-                                        <i class="fa fa-user icon"></i> <?php echo get_post_meta( $post->ID, "contact_name", true ); ?>
-                                    </li>
-                                    <li>
-                                        <i class="fa fa-envelope-o icon"></i>
-                                        <a href="mailto:<?php echo get_post_meta( $post->ID, "contact_email", true ); ?>"><?php echo get_post_meta( $post->ID, "contact_email", true ); ?></a>
-                                    </li>
-                                    <li>
-                                        <i class="fa fa-phone icon"></i> <?php echo get_post_meta( $post->ID, "contact_phone", true ); ?>
-                                    </li>
-                                </ul>
+
+                    <div class="details" id="contact">
+          
+                        <!--CONTACT INFORMATION SECTION-->
+                        <div class=contact-details">
+                                        <h3 class="box-h3"><i class="fa fa-lg fa-thumb-tack icon"></i>Contact Details:</h3>
+                                        <ul class="listing-details-sidebar listing-sidebar-list">
+                                            <li><i class="fa fa-user icon"></i> <?php echo get_post_meta( $post->ID, "contact_name", true ); ?></li>
+                                            <li>
+                                                <i class="fa fa-envelope-o icon"></i>
+                                                <a href="mailto:<?php echo get_post_meta( $post->ID, "contact_email", true ); ?>"><?php echo get_post_meta( $post->ID, "contact_email", true ); ?></a>
+                                            </li>
+                                            <li><i class="fa fa-phone icon"></i> <?php echo get_post_meta( $post->ID, "contact_phone", true ); ?></li>
+                                        </ul>
+                                    </div>
                                 
-                                <!--LOCATION SECTION-->
-                                <h3 class="box-h3"><i class="fa fa-lg fa-compass icon"></i>Address:</h3>
-                                <ul class="listing-details-sidebar listing-sidebar-list">
+                        <!--LOCATION SECTION-->
+                        <div class=contact-address">
+                                    <h3 class="box-h3"><i class="fa fa-lg fa-compass icon"></i>Address:</h3>
+                                    <ul class="listing-details-sidebar listing-sidebar-list">
 								        <li><?php echo get_post_meta( $post->ID, "location_street", true ); ?></li>
                                         <li><?php echo get_post_meta( $post->ID, "location_street_2", true ); ?></li>
                                         <li><?php echo get_post_meta( $post->ID, "location_city", true ); ?>, <?php echo get_post_meta( $post->ID, "location_state", true ); ?></li>
                                         <li><?php echo get_post_meta( $post->ID, "location_zip_code", true ); ?></li>
-                                </ul>
-                        </div>
+                                    </ul>
+                                </div>
+                                
+                    </div>
+                    
                 </div>
 
 
