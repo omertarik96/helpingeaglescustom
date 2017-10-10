@@ -16,7 +16,13 @@
 
 
                         <ul class="meta-tags">
+                            <li>
+                                <span class="badge"><?php the_category( ',' ); ?></span>
+                            </li>
                             <span class="badge"><?php echo get_the_term_list( $post->ID, 'urgency', 'Urgency: ', ', ', '' ); ?></span>
+                            </li>
+                            <li>
+                                <span class="badge"><?php echo get_the_term_list( $post->ID, 'role', 'Role: ', ', ', '' ); ?></span>
                             </li>
                             <li>
 									<span class="badge"><?php
@@ -24,72 +30,22 @@
 											number_format_i18n( get_comments_number() ) );
 										?> </span>
                             </li>
-                            <li>
-                                <span class="badge"><?php echo get_the_term_list( $post->ID, 'role', 'Role: ', ', ', '' ); ?></span>
-                            </li>
-
-                            <li>
-                                <span class="badge"><?php the_category( ',' ); ?></span>
-                            </li>
-
-
                         </ul>
 
 
                         <div class="row">
-                            <div class="col-sm-12 col-md-7 ">
-                                <!--TITLE AND CONTENT-->
-                                <h3><?php the_title(); ?></h3>
-                                <p><?php the_content(); ?>.</p>
-                            </div>
-                            <div style="padding-top: 3%" class="col-sm-12 col-md-5">
-
-                                <!--CONTACT DETAILS SECTION-->
-                                <h3 class="box-h3"><i class="fa fa-lg fa-thumb-tack icon"></i>Contact Details:</h3>
-                                <ul class="listing-details-sidebar listing-sidebar-list">
-                                    <li>
-                                        <i class="fa fa-phone icon"></i> <?php echo get_post_meta( $post->ID, "contact_name", true ); ?>
-                                    </li>
-                                    <li>
-                                        <i class="fa fa-user icon"></i> <?php echo get_post_meta( $post->ID, "contact_phone", true ); ?>
-                                    </li>
-                                    <li>
-                                        <i class="fa fa-envelope-o icon"></i>
-                                        <a href="mailto:<?php echo get_post_meta( $post->ID, "contact_email", true ); ?>"><?php echo get_post_meta( $post->ID, "contact_email", true ); ?></a>
-                                    </li>
-                                </ul>
-                            </div>
+                        
+                            <!--TITLE AND CONTENT-->
+                           <h3><?php the_title(); ?></h3>
+                            <p><?php the_content(); ?>.</p>
+                            
                         </div>
+                        
                     </div>
 
-                    <!--LOCATION SECTION-->
                     <div class="details">
-                        <h3 class="box-h3"><i class="fa fa-lg fa-compass icon"></i>Location:</h3>
-                        <ul class="listing-details-sidebar listing-sidebar-list">
-                            <p>
-								<?php echo get_post_meta( $post->ID, "location_street", true ); ?>
-                                , <?php echo get_post_meta( $post->ID, "location_street_2", true ); ?>
-                                , <?php echo get_post_meta( $post->ID, "location_city", true ); ?> <?php echo get_post_meta( $post->ID, "location_state", true ); ?>
-                                , <?php echo get_post_meta( $post->ID, "location_zip_code", true ); ?></p>
-                        </ul>
-                    </div>
-
-                    <!--COMMENT SECTION-->
-                    <div class="details">
-                        <h4 class="comments-title">
-							<?php
-							printf( _nx( 'One volunteer on "%2$s"', '%1$s volunteer on "%2$s"', get_comments_number(), 'comments title', 'twentythirteen' ),
-								number_format_i18n( get_comments_number() ), '<span>' . get_the_title() . '</span>' );
-							?>
-                        </h4>
-						<?php comments_template(); ?>
-                    </div>
-
-
-                </div>
-
-                <!--RESPOND SECTION-->
-                <div class="col-sm-12 col-md-4">
+                    
+                        <!--RESPOND SECTION-->
                     <div class="details" id="response">
                         <h3 class="box-h3"><i class="fa fa-lg fa-reply icon "></i>Respond:</h3>
                         <div class="listing-details-sidebar listing-sidebar-list">
@@ -101,6 +57,54 @@
                         </div>
 
                     </div>
+                        
+                    </div>
+
+                   
+                    <div class="details">
+                        
+                         <!--COMMENT SECTION-->
+                        <h4 class="comments-title">
+							<?php
+							printf( _nx( 'One volunteer on "%2$s"', '%1$s volunteer on "%2$s"', get_comments_number(), 'comments title', 'twentythirteen' ),
+								number_format_i18n( get_comments_number() ), '<span>' . get_the_title() . '</span>' );
+							?>
+                        </h4>
+						<?php comments_template(); ?>
+						
+                    </div>
+
+
+                </div>
+
+                
+                <div class="col-sm-12 col-md-4">
+                
+                    <!--CONTACT DETAILS SECTION-->
+                                <h3 class="box-h3"><i class="fa fa-lg fa-thumb-tack icon"></i>Contact Details:</h3>
+                                <ul class="listing-details-sidebar listing-sidebar-list">
+                                    <li>
+                                        <i class="fa fa-user icon"></i> <?php echo get_post_meta( $post->ID, "contact_name", true ); ?>
+                                    </li>
+                                    <li>
+                                        <i class="fa fa-envelope-o icon"></i>
+                                        <a href="mailto:<?php echo get_post_meta( $post->ID, "contact_email", true ); ?>"><?php echo get_post_meta( $post->ID, "contact_email", true ); ?></a>
+                                    </li>
+                                    <li>
+                                        <i class="fa fa-phone icon"></i> <?php echo get_post_meta( $post->ID, "contact_phone", true ); ?>
+                                    </li>
+                                </ul>
+                                
+                                <!--LOCATION SECTION-->
+                                <h3 class="box-h3"><i class="fa fa-lg fa-compass icon"></i>Location:</h3>
+                                <ul class="listing-details-sidebar listing-sidebar-list">
+                                    <p>
+								        <?php echo get_post_meta( $post->ID, "location_street", true ); ?>
+                                        , <?php echo get_post_meta( $post->ID, "location_street_2", true ); ?>
+                                        , <?php echo get_post_meta( $post->ID, "location_city", true ); ?> <?php echo get_post_meta( $post->ID, "location_state", true ); ?>
+                                        , <?php echo get_post_meta( $post->ID, "location_zip_code", true ); ?></p>
+                                </ul>
+                    
                 </div>
 
 
