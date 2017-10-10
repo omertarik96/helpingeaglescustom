@@ -20,12 +20,12 @@
                             <li><span class="badge">Category: <?php the_category( ',' ); ?></span></li>
                             <li><span class="badge"><?php echo get_the_term_list( $post->ID, 'urgency', 'Urgency: ', ', ', '' ); ?></span></li>
                             <li><span class="badge"><?php echo get_the_term_list( $post->ID, 'role', 'Role: ', ', ', '' ); ?></span></li>
-                            <li>
+                            <!-- Hiding for now... <li>
 									<span class="badge"><?php
 										printf( _nx( 'Currently one volunteer', 'Currently %1$s volunteer', get_comments_number(), 'comments title', 'helpingeaglescustom' ),
 											number_format_i18n( get_comments_number() ) );
 										?> </span>
-                            </li>
+                            </li> -->
                         </ul>
 
                            <!--TITLE AND CONTENT-->
