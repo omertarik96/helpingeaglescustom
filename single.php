@@ -50,7 +50,7 @@
                          <!--COMMENT SECTION-->
                         <h4 class="comments-title">
 							<?php
-							printf( _nx( 'One volunteer on "%2$s"', '%1$s volunteer on "%2$s"', get_comments_number(), 'comments title', 'twentythirteen' ),
+							printf( _nx( 'One response(s) on "%2$s"', '%1$s response(s) on "%2$s"', get_comments_number(), 'comments title', 'twentythirteen' ),
 								number_format_i18n( get_comments_number() ), '<span>' . get_the_title() . '</span>' );
 							?>
                         </h4>
