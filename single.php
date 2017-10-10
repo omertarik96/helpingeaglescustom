@@ -9,21 +9,17 @@
 				the_post();
 				?>
                 <div class="col-sm-12 col-md-8">
+
                     <div class="card details">
+
                         <div class="card-image">
 							<?php the_post_thumbnail( 'full', array( 'class' => 'img-responsive' ) ); ?>
                         </div>
 
-
                         <ul class="meta-tags">
-                            <li>
-                                <span class="badge"><?php the_category( ',' ); ?></span>
-                            </li>
-                            <span class="badge"><?php echo get_the_term_list( $post->ID, 'urgency', 'Urgency: ', ', ', '' ); ?></span>
-                            </li>
-                            <li>
-                                <span class="badge"><?php echo get_the_term_list( $post->ID, 'role', 'Role: ', ', ', '' ); ?></span>
-                            </li>
+                            <li><span class="badge"><?php the_category( ',' ); ?></span></li>
+                            <li><span class="badge"><?php echo get_the_term_list( $post->ID, 'urgency', 'Urgency: ', ', ', '' ); ?></span></li>
+                            <li><span class="badge"><?php echo get_the_term_list( $post->ID, 'role', 'Role: ', ', ', '' ); ?></span></li>
                             <li>
 									<span class="badge"><?php
 										printf( _nx( 'Currently one volunteer', 'Currently %1$s volunteer', get_comments_number(), 'comments title', 'helpingeaglescustom' ),
@@ -32,14 +28,9 @@
                             </li>
                         </ul>
 
-
-                        <div class="row">
-                        
-                            <!--TITLE AND CONTENT-->
+                           <!--TITLE AND CONTENT-->
                            <h3><?php the_title(); ?></h3>
                             <p><?php the_content(); ?>.</p>
-                            
-                        </div>
                         
                     </div>
 
@@ -54,11 +45,6 @@
 								'comment_field' => '<p class="comment-form-comment"><label for="comment">' . _x( 'Response', 'noun' ) . '</label><br /><textarea id="comment" name="comment" aria-required="true"  cols="45" rows="8" maxlength="65525"  required="required"></textarea></p>',
 							) ); ?>
                         </div>
-                        
-                    </div>
-
-                   
-                    <div class="details">
                         
                          <!--COMMENT SECTION-->
                         <h4 class="comments-title">
