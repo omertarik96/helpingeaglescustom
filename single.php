@@ -79,7 +79,7 @@
                                     </div>
                                 
                         <!--LOCATION SECTION-->
-                        <div class=contact-address">
+                        <div class="contact-address">
                                     <h3 class="box-h3"><i class="fa fa-lg fa-compass icon"></i>Address:</h3>
                                     <ul class="listing-details-sidebar listing-sidebar-list">
 								        <li><?php echo get_post_meta( $post->ID, "location_street", true ); ?></li>
