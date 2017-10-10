@@ -46,7 +46,6 @@
                     <div class="details">
                     
                         <!--RESPOND SECTION-->
-                    <div class="details" id="response">
                         <h3 class="box-h3"><i class="fa fa-lg fa-reply icon "></i>Respond:</h3>
                         <div class="listing-details-sidebar listing-sidebar-list">
 
@@ -55,8 +54,6 @@
 								'comment_field' => '<p class="comment-form-comment"><label for="comment">' . _x( 'Response', 'noun' ) . '</label><br /><textarea id="comment" name="comment" aria-required="true"  cols="45" rows="8" maxlength="65525"  required="required"></textarea></p>',
 							) ); ?>
                         </div>
-
-                    </div>
                         
                     </div>
 
@@ -81,6 +78,7 @@
                 <div class="col-sm-12 col-md-4">
                 
                     <!--CONTACT DETAILS SECTION-->
+                                <div class="details" id="response">
                                 <h3 class="box-h3"><i class="fa fa-lg fa-thumb-tack icon"></i>Contact Details:</h3>
                                 <ul class="listing-details-sidebar listing-sidebar-list">
                                     <li>
@@ -104,7 +102,7 @@
                                         , <?php echo get_post_meta( $post->ID, "location_city", true ); ?> <?php echo get_post_meta( $post->ID, "location_state", true ); ?>
                                         , <?php echo get_post_meta( $post->ID, "location_zip_code", true ); ?></p>
                                 </ul>
-                    
+                        </div>
                 </div>
 
 
