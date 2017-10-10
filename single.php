@@ -31,20 +31,21 @@
                            <!--TITLE AND CONTENT-->
                            <h3><?php the_title(); ?></h3>
                             <p><?php the_content(); ?>.</p>
-                        
+
+                        <!--RESPOND SECTION-->
+                        <div class="respond">
+                            <h3 class="box-h3"><i class="fa fa-lg fa-reply icon "></i>Respond</h3>
+                            <div class="listing-details-sidebar listing-sidebar-list">
+							    <?php comment_form( array(
+								    'label_submit'  => 'Submit',
+								    'comment_field' => '<p class="comment-form-comment"><textarea id="comment" name="comment" aria-required="true"  cols="45" rows="8" maxlength="65525"  required="required"></textarea></p>',
+							    ) ); ?>
+                            </div>
+                        </div>
+
                     </div>
 
                     <div class="details"  id="response">
-                    
-                        <!--RESPOND SECTION-->
-                        <h3 class="box-h3"><i class="fa fa-lg fa-reply icon "></i>Respond:</h3>
-                        <div class="listing-details-sidebar listing-sidebar-list">
-
-							<?php comment_form( array(
-								'label_submit'  => 'Provide Help',
-								'comment_field' => '<p class="comment-form-comment"><label for="comment">' . _x( 'Response', 'noun' ) . '</label><br /><textarea id="comment" name="comment" aria-required="true"  cols="45" rows="8" maxlength="65525"  required="required"></textarea></p>',
-							) ); ?>
-                        </div>
                         
                          <!--COMMENT SECTION-->
                         <h4 class="comments-title">
@@ -65,9 +66,9 @@
 
                     <div class="details" id="contact">
           
-                        <!--CONTACT INFORMATION SECTION-->
+                        <!--CONTACT SECTION-->
                         <div class=contact-details">
-                                        <h3 class="box-h3"><i class="fa fa-lg fa-thumb-tack icon"></i>Contact Details:</h3>
+                                        <h3 class="box-h3"><i class="fa fa-lg fa-thumb-tack icon"></i>Contact</h3>
                                         <ul class="listing-details-sidebar listing-sidebar-list">
                                             <li><i class="fa fa-user icon"></i> <?php echo get_post_meta( $post->ID, "contact_name", true ); ?></li>
                                             <li>
@@ -80,7 +81,7 @@
                                 
                         <!--LOCATION SECTION-->
                         <div class="contact-address">
-                                    <h3 class="box-h3"><i class="fa fa-lg fa-compass icon"></i>Address:</h3>
+                                    <h3 class="box-h3"><i class="fa fa-lg fa-compass icon"></i>Address</h3>
                                     <ul class="listing-details-sidebar listing-sidebar-list">
 								        <li><?php echo get_post_meta( $post->ID, "location_street", true ); ?></li>
                                         <li><?php echo get_post_meta( $post->ID, "location_street_2", true ); ?></li>
