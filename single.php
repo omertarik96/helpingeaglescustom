@@ -17,7 +17,7 @@
                         </div>
 
                         <ul class="meta-tags">
-                            <li><span class="badge"><?php the_category( ',' ); ?></span></li>
+                            <li><span class="badge">Category: <?php the_category( ',' ); ?></span></li>
                             <li><span class="badge"><?php echo get_the_term_list( $post->ID, 'urgency', 'Urgency: ', ', ', '' ); ?></span></li>
                             <li><span class="badge"><?php echo get_the_term_list( $post->ID, 'role', 'Role: ', ', ', '' ); ?></span></li>
                             <li>
