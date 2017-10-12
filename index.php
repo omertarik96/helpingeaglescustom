@@ -35,6 +35,13 @@
                 ?>
             </div>
 
+            <!--Pagination-->
+            <div class="container">
+	            <?php eagle2eagle_numeric_posts_nav(); ?>
+            </div>
+
+
+
         </div>
        
 

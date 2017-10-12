@@ -24,3 +24,35 @@ Text Domain: helpingeaglescustom
    font-weight: 400;
    font-style: normal;
 }
+
+
+/*Pagination Styles*/
+
+
+.navigation li a,
+.navigation li a:hover,
+.navigation li.active a,
+.navigation li.disabled {
+   color: #fff;
+   text-decoration:none !important;
+}
+
+.navigation li {
+   display: inline !important;
+}
+
+.navigation li a,
+.navigation li a:hover,
+.navigation li.active a,
+.navigation li.disabled {
+   background-color: #0075c9 !important;
+   border-radius: 3px !important;
+   cursor: pointer !important;
+   padding: 12px !important;
+   padding: 0.75rem !important;
+}
+
+.navigation li a:hover,
+.navigation li.active a {
+   background-color: #3C8DC5 !important;
+}
