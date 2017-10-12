@@ -34,7 +34,7 @@
 --!>
 
 <div class="col-xs-12 footer-text">
-                    <p>Built with &#9829; and &#9749; by the HCC Innovation Club. Learn more about <a href="/about">our amazing team</a>.
+                    <p>Built with &#9829; and &#9749; by the HCC Innovation Club. Learn more about <a href="/about">our amazing team</a> or <a href="/contact">contact us</a>.
                 </div>
             </div>
         </footer>
