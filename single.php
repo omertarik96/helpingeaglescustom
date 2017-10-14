@@ -23,7 +23,7 @@
 
                            <!--TITLE AND CONTENT-->
                            <h2><?php the_title(); ?></h2>
-			   <p class="byline">Posted by <?php echo $curauth->display_name; ?> on <?php the_date('M-d-y'); ?></p>
+			   <p class="byline">Posted by <?php the_author(); ?> on <?php the_date('M-d-y'); ?></p>
                            <?php the_content(); ?>
 
                         <!--RESPOND SECTION-->
