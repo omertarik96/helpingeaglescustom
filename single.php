@@ -64,6 +64,7 @@
                 
                 <div class="col-sm-12 col-md-4">
 
+		<!-- Hiding Details Section
                     <div class="details" id="contact">
           
                         <!--CONTACT SECTION-->
@@ -90,7 +91,7 @@
                                     </ul>
                                 </div>
                                 
-                    </div>
+                    </div> -->
                     
                 </div>
 
