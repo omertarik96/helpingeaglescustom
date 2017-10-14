@@ -12,25 +12,19 @@
 
                     <div class="card details">
 
-                        <div class="card-image">
-							<?php the_post_thumbnail( 'full', array( 'class' => 'img-responsive' ) ); ?>
-                        </div>
-
                         <ul class="meta-tags">
                             <li><span class="badge">Category: <?php the_category( ',' ); ?></span></li>
                             <li><span class="badge"><?php echo get_the_term_list( $post->ID, 'urgency', 'Urgency: ', ', ', '' ); ?></span></li>
                             <li><span class="badge"><?php echo get_the_term_list( $post->ID, 'role', 'Role: ', ', ', '' ); ?></span></li>
-                            <!-- Hiding for now... <li>
-									<span class="badge"><?php
-										printf( _nx( 'Currently one volunteer', 'Currently %1$s volunteer', get_comments_number(), 'comments title', 'helpingeaglescustom' ),
-											number_format_i18n( get_comments_number() ) );
-										?> </span>
-                            </li> -->
+                            <!-- Hiding for now... 
+			    	<li><span class="badge"><?php printf( _nx( 'Currently one volunteer', 'Currently %1$s volunteer', get_comments_number(), 'comments title', 'helpingeaglescustom' ), number_format_i18n( get_comments_number() ) ); ?> </span></li>
+			     -->
                         </ul>
 
                            <!--TITLE AND CONTENT-->
-                           <h3><?php the_title(); ?></h3>
-                            <?php the_content(); ?>
+                           <h2><?php the_title(); ?></h2>
+			   <p class="byline">Posted by <?php echo $curauth->display_name; ?> on <?php the_date('M-d-y'); ?></p>
+                           <?php the_content(); ?>
 
                         <!--RESPOND SECTION-->
                         <div class="respond">
