@@ -30,6 +30,15 @@
     <![endif]-->         
     </head>     
     <body data-spy="scroll" data-target="nav">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-65558028-5"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'UA-65558028-5');
+    </script>
         <header id="header-1" class="soft-scroll header-1">
             <!-- Navbar -->
             <nav class="main-nav navbar-fixed-top headroom headroom--pinned red header-background">

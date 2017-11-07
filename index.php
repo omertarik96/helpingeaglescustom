@@ -24,11 +24,9 @@
                                 <h3 class="card-heading"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
                        		<div class="card-excerpt"><?php the_excerpt(); ?></div>
 				<div class="card-categories"><?php the_category(','); ?></div>
-                                <!-- do we still need this if title is linked? <a href="<?php the_permalink(); ?>"> <button type="button" class="btn btn-default button-main button-red">Provide Help</button> </a> -->
                             </div>
                         </div>
                     </div>
-
                         <?php
                     }
                 }
@@ -39,9 +37,6 @@
             <div class="container">
 	            <?php eagle2eagle_numeric_posts_nav(); ?>
             </div>
-
-
-
         </div>
        
 
